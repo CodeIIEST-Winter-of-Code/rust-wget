@@ -18,7 +18,6 @@ rust-wget is a simple re-write of the famous wget utility in rust.
 Compile the binary and you are set to use it.
 
 ## Future Plans
-* **Build System**- Considering using Travis.
 * **option expansion**- Add other cli options including file download path
 * **multi-threading**- Is it necessary?
 
