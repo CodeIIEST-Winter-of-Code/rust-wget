@@ -19,23 +19,15 @@ before_install:
 
 install:
   # install all of the dependencies you need here
-  - sudo apt install curl  
-  - curl https://sh.rustup.rs -sSf | sh   # installs rust if not already done
-  - source $HOME/.cargo/env  # sets $PATH
-  - rustup component add rust-src
-  - rustup component add rust-docs
   - rustup update
-  - rustup toolchain install nightly
   
-
-
 before_script:
   # execute all of the commands which need to be executed 
   # before running actual tests
-  - 
 
 script:
   # execute all of the commands which 
   # should make the build pass or fail
   - cargo build --verbose
   - sudo mv /target/debug/rust-wget /usr/bin/
+
