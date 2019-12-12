@@ -23,7 +23,7 @@ install:
 before_script:
   # execute all of the commands which need to be executed 
   # before running actual tests
-  -pwd
+  - pwd
 
 script:
   # execute all of the commands which 
