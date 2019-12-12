@@ -15,6 +15,8 @@ branches:
 before_install:
   # execute all of the commands which need to be executed 
   # before installing dependencies
+  - sudo apt install libssl-dev 
+  - sudo apt install pkg-config
 
 install:
   # install all of the dependencies you need here
@@ -29,5 +31,7 @@ script:
   # execute all of the commands which 
   # should make the build pass or fail
   - cargo build 
-  - sudo mv /target/debug/rust-wget /usr/bin/
+  - cd target 
+  - cd debug
+  - sudo mv rust-wget /usr/bin/
 
